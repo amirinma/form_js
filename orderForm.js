@@ -10,6 +10,9 @@ document.getElementById('main-select-op1'). textContent = 'Model 1'
 document.getElementById('main-select-op2'). textContent = 'Model 2'
 document.getElementById('main-select-op3'). textContent = 'Model 3'
 
+
+//document.getElementById('login-div').textContent = "I am Logged In!"
+
 function elemGenerator(parEl, quanEl, typeEl, attrName, attrVal) {
   for (let i = 0; i < quanEl; i++) {
     let elem = parEl.appendChild(document.createElement(`${typeEl}`)).setAttribute(`${attrName}`, `${attrName === "id" ? attrVal + [i] : attrVal}`)
